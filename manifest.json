@@ -1,0 +1,6 @@
+{
+  "name": "files-whatever",
+  "short_name": "files-whatever",
+  "start_url": "/",
+  "display": "standalone"
+}
