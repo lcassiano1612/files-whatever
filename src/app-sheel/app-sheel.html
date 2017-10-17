@@ -1,0 +1,35 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/iron-pages/iron-pages.html">
+
+<link rel="import" href="../app-page/app-page.html">
+<link rel="import" href="../auth-page/auth-page.html">
+
+<dom-module id="app-sheel">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <iron-pages
+            selected="[[page]]"
+            attr-for-selected="name"
+            fallback-selection="page404"
+            role="main">
+            <auth-page></auth-page>
+            <app-page></app-page>
+        </iron-pages>
+    </template>
+
+    <script>
+        class AppSheel extends Polymer.Element {
+            static get is() { return 'app-sheel'; }
+            static get properties() {
+                return {
+
+                };
+            }
+        }
+        window.customElements.define(AppSheel.is, AppSheel);
+    </script>
+</dom-module>

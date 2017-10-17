@@ -1,0 +1,24 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="auth-page">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <p>auth-page</p>
+    </template>
+
+    <script>
+        class AuthPage extends Polymer.Element {
+            static get is() { return 'auth-page'; }
+            static get properties() {
+                return {
+
+                };
+            }
+        }
+        window.customElements.define(AuthPage.is, AuthPage);
+    </script>
+</dom-module>

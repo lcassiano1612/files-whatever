@@ -1,0 +1,24 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="app-page">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <p>app-page</p>
+    </template>
+
+    <script>
+        class AppPage extends Polymer.Element {
+            static get is() { return 'app-page'; }
+            static get properties() {
+                return {
+
+                };
+            }
+        }
+        window.customElements.define(AppPage.is, AppPage);
+    </script>
+</dom-module>
